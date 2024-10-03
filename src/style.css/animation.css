@@ -1,0 +1,295 @@
+.to_hover {
+  position: relative;
+  display: inline-block;
+}
+.link_to a {
+  text-decoration: none;
+}
+.link_to a.active p {
+  font-size: 14px;
+  color: #131212;
+  font-weight: 500;
+  line-height: 20px;
+  background: linear-gradient(90.95deg, #b0852c -0.52%, #d8c05b 126.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+}
+
+
+.link_to a:hover p {
+  font-size: 14px;
+  color: #131212;
+  font-weight: 500;
+  line-height: 20px;
+  background: linear-gradient(90.95deg, #b0852c -0.52%, #d8c05b 126.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.link_to a:hover p::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -20px;
+  background: linear-gradient(90deg, #b0852c 23.99%, #d8c05b 101.58%);
+}
+
+.link_to a.active p::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -20px;
+  background: linear-gradient(90deg, #b0852c 23.99%, #d8c05b 101.58%);
+}
+
+.link_to {
+  height: 60px;
+  cursor: pointer;
+}
+.link_to:hover .hover_head {
+  display: block;
+}
+
+.hover_head {
+  display: none;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+  animation: fadeIn 0.3s ease forwards;
+  opacity: 0;
+}
+.hover_head a:hover {
+  background: linear-gradient(90.95deg, #b0852c -0.52%, #d8c05b 126.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.to_hover:hover .hover_head {
+  display: block;
+}
+.to_hover:hover .link_to:hover p {
+  font-size: 14px;
+  color: #131212;
+  font-weight: 500;
+  line-height: 20px;
+  background: linear-gradient(90.95deg, #b0852c -0.52%, #d8c05b 126.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+}
+.to_hover:hover .link_to:hover p::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -20px;
+  background: linear-gradient(90deg, #b0852c 23.99%, #d8c05b 101.58%);
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.hover_head a {
+  height: 30px;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  color: #131212;
+  white-space: nowrap;
+}
+
+.burger_p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: rgba(19, 18, 18, 1);
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.link_to_burger {
+  display: flex;
+  align-items: end;
+  margin: 25px 40px 0 0;
+}
+
+@media (max-width: 630px) {
+  .hover_head_one {
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.05);
+    transition: 5s;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease;
+  }
+  .click {
+    max-height: 500px;
+    transition: max-height 1.5s ease;
+    display: block;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .hover_head_one {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    height: 40px;
+  }
+  .hover_head_one a {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.05);
+    padding: 10px 0 0 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    height: 40px;
+  }
+  .click a {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.05);
+    padding: 10px 0 0 15px;
+    height: 40px;
+  }
+  .between_heaede {
+    height: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.05);
+    padding: 0 0 0 15px;
+  }
+  .between_border {
+    position: relative;
+    height: 60px;
+    padding: 0 0 0 15px;
+    background: rgba(0, 0, 0, 0.05);
+  }
+  .between_border::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background: linear-gradient(90deg, #b0852c 23.99%, #d8c05b 101.58%);
+  }
+  .burger_menu_wiate {
+    padding: 0 !important;
+  }
+  .icons_color {
+    background-color: #131212;
+    height: 100%;
+    width: 60px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .rotate {
+    transform: rotate(180deg);
+    transition: 0.5s;
+  }
+  .active_link_one {
+    font-size: 14px;
+    color: #131212;
+    font-weight: 500;
+    line-height: 20px;
+    background: linear-gradient(90.95deg, #b0852c -0.52%, #d8c05b 126.88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  .link_text:hover {
+    font-size: 14px;
+    color: #131212;
+    font-weight: 500;
+    line-height: 20px;
+    background: linear-gradient(90.95deg, #b0852c -0.52%, #d8c05b 126.88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
