@@ -47,6 +47,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.4.0",
-    "knip": "^5.27.2"
+    "knip": "^5.27.2",
+    "typescript": "^4.9.5"
   }
 }
