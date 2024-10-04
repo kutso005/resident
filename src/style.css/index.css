@@ -153,7 +153,7 @@ h6 {
 .popular_title {
   font-size: 16px;
   font-weight: 700;
-  color: rgba(19, 18, 18, 1);
+  color: rgb(250, 248, 248);
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;

@@ -34,15 +34,13 @@ const Burger = ({ header, setSearchInput }) => {
             <div className="burder_two" />
           </div>
           <NavLink to="/">
-            <img
-              style={{
-                height: "40px",
-                position: "relative",
-                zIndex: "99",
-              }}
-              src={logo}
-              alt=""
-            />
+          <div>
+            <p class="sectionSubTitle ">
+              ALIKA
+              <span class=" shadowText "
+                > ALIKA</span>
+            </p>
+          </div>
           </NavLink>
           <div>
             <div
