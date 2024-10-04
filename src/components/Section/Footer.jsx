@@ -113,7 +113,7 @@ const Footer = ({ residentList }) => {
           </div>
           <div className="with_prosent end column col-lg-3 col-md-6 col-sm-6 col-12  ">
             <div className="d-flex flex-column ">
-              <h6 className="popular_title " style={{ margin: "0 0 10px 0" }}>
+              <h6 className="popular_title  " style={{ margin: "0 0 10px 0" ,color:"#fff"}}>
                 г. Бишкек, Проспект. <br /> Чынгыза Айтматова  27
               </h6>
               <NavLink to="#" className="footer_a">
