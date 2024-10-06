@@ -15,32 +15,32 @@ const Contacts = () => {
             contacts
           </button>
           <h1 className="title" style={{ color: "#fff", margin: "0 0 10px 0" }}>
-            г. Бишкек, ул. Нуркамала 29
+          г. Бишкек, Проспект  Чынгыза Айтматова  27
           </h1>
           <p className="contacts_project text-contant">
-            График работы: с 9:00 до 20:00
+            График работы: с 08:00 до 20:00
           </p>
-          <a href="">journal.resident.kg@gmail.com</a>
-          <a href="">journal.resident.kg@gmail.com</a>
-          <a href="">journal.resident.kg@gmail.com</a>
+          <a href="mailto:Alika.Amankulova9@gmail.com">Alika.Amankulova9@gmail.com</a>
+          <a href="mailto:Alika.Amankulova9@gmail.com">Alika.Amankulova9@gmail.com</a>
+          <a href="mailto:Alika.Amankulova9@gmail.com">Alika.Amankulova9@gmail.com</a>
           <div className="margin_top">
             <div className="contacts_flex_text">
               <p className="contacts_project">Почтовый индекс:</p>
-              <p className="contacts_time">720049</p>
+              <p className="contacts_time">00000</p>
             </div>
             <div className="contacts_flex_text">
               <p className="contacts_project">Владелец и издатель:</p>
               <p className="contacts_time">
-                ОсОО «Trust house C.A. real estate»
+                Amankulova Altynai
               </p>
             </div>
             <div className="contacts_flex_text">
               <p className="contacts_project">Регистрационный номер:</p>
-              <p className="contacts_time">10308</p>
+              <p className="contacts_time">0000</p>
             </div>
             <div className="contacts_flex_text">
               <p className="contacts_project">Свидетельство:</p>
-              <p className="contacts_time">#000758</p>
+              <p className="contacts_time">#00000</p>
             </div>
           </div>
           <div className="d-flex  align-items-center justify-content-between flex-wrap margin_top">

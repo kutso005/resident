@@ -9,9 +9,9 @@ const Us = () => {
     <div className="container  interview_one_higth">
       <div className="d-flex align-items-center justify-content-center flex-column">
         <button className="popular_text mt-5">о нас</button>
-        <h1 className="us">
+        {/* <h1 className="us">
           Resident - первый журнал <br /> о строительстве в кыргызстане
-        </h1>
+        </h1> */}
         <img className="img_banner" src={banner} alt="" />
       </div>
       <h1 className="title" style={{ margin: "120px 0 10px 0" }}>

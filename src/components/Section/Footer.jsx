@@ -120,10 +120,10 @@ const Footer = ({ residentList }) => {
                 {t("key10")}
               </NavLink>
               <a
-                href="mailto:journal.resident.kg@gmail.com"
+                href="mailto:Alika.Amankulova9@gmail.com"
                 className="footer_a as_bas"
               >
-                Alika.Amankulova.@gmail.com
+                Alika.Amankulova9@gmail.com
               </a>
             </div>
           </div>
